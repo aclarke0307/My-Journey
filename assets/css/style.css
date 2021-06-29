@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* apply style to <header> */
+header {
+    padding: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #EDCFA9;
+}
+header h1 {
+    display: inline-block;
+    font-size: 45px;
+    
+}
+header nav {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+a {
+    text-decoration: underline;
+    color: #000;
+}
+/*End of style to header */
