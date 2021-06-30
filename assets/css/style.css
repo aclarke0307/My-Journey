@@ -75,3 +75,17 @@ a {
     height: auto;
     vertical-align: middle;
 }
+/*footer*/
+footer {
+    padding: 20px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+footer ul {
+    list-style-type: none;
+}
