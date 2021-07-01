@@ -49,20 +49,23 @@ a {
     background-color: #E89F71;
     overflow: auto;
     margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .step img {
-    float: left;
-    width: 10%;
+    width: 15%;
+    margin: 3%;
     margin-top: 15px;
     margin-left: 40px;
     border: 3px solid #3A6351;
 }
 .step p {
-    float: right;
-    text-align: justify;
     margin-right: 10px;
     margin-top: 40px;
     font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .section-title{
     text-align: center;
