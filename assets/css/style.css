@@ -87,12 +87,23 @@ footer {
     padding: 20px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 footer h2 {
     margin-bottom: 20px;
     font-size: 28px;
+    padding-top: 10px;
 }
-footer ul {
+footer ul li {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li {
+    margin: 0 100px;
 }
