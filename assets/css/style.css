@@ -27,10 +27,15 @@ header nav {
 }
 header nav ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-header nav ul li {
-    display: inline-block;
-    margin-left: 30px;
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
 a {
     text-decoration: underline;
