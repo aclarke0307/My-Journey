@@ -58,7 +58,7 @@ a {
     margin: 3%;
     margin-top: 15px;
     margin-left: 40px;
-    border: 3px solid #3A6351;
+    
 }
 .step p {
     margin-right: 10px;
@@ -66,6 +66,7 @@ a {
     font-size: 22px;
     display: flex;
     flex-wrap: wrap;
+    color: white;
 }
 .section-title{
     text-align: center;
