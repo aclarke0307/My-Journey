@@ -33,7 +33,7 @@ header nav ul {
     align-items: center;
 }
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
@@ -70,7 +70,7 @@ a {
 }
 .section-title{
     text-align: center;
-    font-size: 45px;
+    font-size: 48px;
 }
 /*end of style to About me */
 
@@ -130,4 +130,63 @@ footer ul li {
 }
 footer ul li {
     margin: 0 100px;
+}
+/* Media Query for smaller desktop screens and smaller */
+@media screen and (max-width :989px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2 ul li {
+        text-align: center;
+        width: 100%;
+    }
+    .step {
+        width: 100%;
+        text-align: center;
+    }
+    .section-title {
+        width: 80%;
+    }
+}
+
+/*Media Query for tablets amd smaller */
+@media  screen and (max-width: 768px) {
+    .work {
+        padding: 30px 15px;
+
+    }
+    .portfolio-img{
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .text-block {
+        flex: 100%;
+        padding-top: 20px;
+    }
+}
+
+/*Media Query for mobile phones ans smaller */
+@media  screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+    .text-block {
+        flex: 100%;
+        padding-top: 20px;
+    }
 }
