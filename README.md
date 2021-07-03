@@ -14,7 +14,7 @@ The more exciting part of my project was the aesthetisc. I add fun added rounded
 
 Screenshots
 
-![screenshot](assets/images/screenshot1.png)
+![screenshot](My-Journey/assets/images/Screenshot1.png)
 
 ### Built With
 *html
