@@ -11,24 +11,41 @@ header {
     padding: 35px;
     font-family:Arial, Helvetica, sans-serif;
     background-color: #EDCFA9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 header h1 {
-    display: inline-block;
+    margin: 0;
     font-size: 45px;
+    font-weight: lighter;
     
 }
 header nav {
-    float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     padding-top: 10px;
 }
 header nav ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-header nav ul li {
-    display: inline-block;
-    margin-left: 30px;
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+header nav ul li a:hover{
+    background: rgba(170,74,48,0.7);
+    border-radius: 15px;
+    transform: scale(1.2);
+    color: white;
 }
 a {
     text-decoration: underline;
@@ -42,24 +59,34 @@ a {
     background-color: #E89F71;
     overflow: auto;
     margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 30px;
 }
 .step img {
-    float: left;
-    width: 10%;
+    width: 15%;
+    margin: 3%;
     margin-top: 15px;
     margin-left: 40px;
-    border: 3px solid #3A6351;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgb(185, 91, 91);
 }
 .step p {
-    float: right;
-    text-align: justify;
     margin-right: 10px;
     margin-top: 40px;
     font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
 }
 .section-title{
-    text-align: center;
+    text-align:justify;
     font-size: 45px;
+    font-weight:700;
+}
+.work h2 {
+    text-align: center;
 }
 /*end of style to About me */
 
@@ -68,24 +95,123 @@ a {
 .work {
     background-color: #D57149;
     margin: 20px 20px;
-
+    border-radius: 30px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.flex-item {
+    width: 45%;
+    border-radius: 25%;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.flex-item .text-block {
+    margin-top: auto;
+    bottom: 20px;
+    color: white;
 }
 .portfolio-img {
-    width: 30%;
-    height: auto;
-    vertical-align: middle;
+    width: 70%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.80);
+}
+.portfolio-img:hover {
+    transform: scale(1.1);
 }
 /*footer*/
 footer {
     padding: 20px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 footer h2 {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bolder;
 }
-footer ul {
+footer ul li {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li {
+    margin: 0 100px;
+}
+footer a {
+    color: white;
+}
+/* Media Query for smaller desktop screens and smaller */
+@media screen and (max-width :989px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2 ul li {
+        text-align: center;
+        width: 100%;
+    }
+    .step {
+        width: 100%;
+        text-align: center;
+    }
+    .section-title {
+        width: 80%;
+    }
+}
+
+/*Media Query for tablets amd smaller */
+@media  screen and (max-width: 768px) {
+    .work {
+        padding: 30px 15px;
+
+    }
+    .portfolio-img{
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .text-block {
+        flex: 100%;
+        padding-top: 30px;
+    }
+}
+
+/*Media Query for mobile phones ans smaller */
+@media  screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+    .text-block {
+        flex: 100%;
+        padding-top: 30px;
+    }
 }
