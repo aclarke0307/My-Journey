@@ -1,6 +1,6 @@
 # My-Journey
 
-##Purpose
+## Purpose
 
 This is my portfolio where I will build on as I progress in the Bootcamp. I included a short decription about myself and below that are the current projects I've worked on. Even further down is a section of different platforms a individual can get in contact with me. This project, at first, was challenging becuase I would have to build my code from scratch and make sure I was also establish branches and subbranches (feature). However, my previous projects acted as a guide to how I wanted my portfolio to appear and function.
 
@@ -15,3 +15,11 @@ The more exciting part of my project was the aesthetisc. I add fun added rounded
 Screenshots
 
 ![screenshot](assets/images/screenshot1.png)
+
+### Built With
+*html
+*css
+## website
+
+## Contribution
+aclarke0307
